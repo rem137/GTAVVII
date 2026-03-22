@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GTA VII — Neon Streets</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="menu" class="overlay visible">
+      <div class="card">
+        <h1>GTA VII — Neon Streets</h1>
+        <p>Prototype premium: braquages, police adaptative, gangs et ville vivante.</p>
+        <ul>
+          <li>Déplacement: ZQSD / WASD</li>
+          <li>Tirer: Clic gauche</li>
+          <li>Dash: Espace</li>
+          <li>Interagir / Entrer véhicule: E</li>
+          <li>Pause: P</li>
+        </ul>
+        <button id="startBtn">Jouer</button>
+      </div>
+    </div>
+
+    <main class="layout">
+      <aside class="hud">
+        <h2>HUD</h2>
+        <div class="stats-grid">
+          <article><span>Argent</span><strong id="money">$0</strong></article>
+          <article><span>Réputation</span><strong id="rep">0</strong></article>
+          <article><span>Vie</span><strong id="hp">100</strong></article>
+          <article><span>Armure</span><strong id="armor">0</strong></article>
+          <article><span>Recherche</span><strong id="wanted">☆☆☆☆☆</strong></article>
+          <article><span>Quartier</span><strong id="district">Downtown</strong></article>
+        </div>
+
+        <section class="mission-box">
+          <h3>Mission active</h3>
+          <p id="missionTitle">—</p>
+          <p id="missionDesc">Appuie sur Jouer pour lancer la campagne.</p>
+          <p id="missionProgress"></p>
+        </section>
+
+        <section class="feed-box">
+          <h3>Live Feed</h3>
+          <ul id="feed"></ul>
+        </section>
+      </aside>
+
+      <section class="game-wrap">
+        <canvas id="game" width="1280" height="720"></canvas>
+        <div id="pausePanel" class="overlay">
+          <div class="card compact">
+            <h2>Pause</h2>
+            <p>Appuie sur P pour reprendre.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="game.js"></script>
+  </body>
+</html>
