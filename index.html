@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GTA VII — Prototype</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="layout">
+      <section class="hud">
+        <h1>GTA VII — Prototype jouable</h1>
+        <p>Objectif: survivre, voler des voitures et atteindre 1 000$ avant de te faire arrêter.</p>
+        <ul>
+          <li><strong>Déplacement:</strong> ZQSD / WASD</li>
+          <li><strong>Courir:</strong> Shift</li>
+          <li><strong>Entrer/Sortir véhicule:</strong> E</li>
+          <li><strong>Voler une voiture:</strong> E près d’une voiture</li>
+        </ul>
+        <div class="stats">
+          <div><span>Argent</span><strong id="money">0$</strong></div>
+          <div><span>Recherche</span><strong id="wanted">0★</strong></div>
+          <div><span>Vie</span><strong id="health">100</strong></div>
+          <div><span>État</span><strong id="state">À pied</strong></div>
+        </div>
+        <p id="mission">Mission: Voler 3 voitures sans mourir.</p>
+      </section>
+      <section class="game-wrap">
+        <canvas id="game" width="960" height="540"></canvas>
+      </section>
+    </main>
+    <script src="game.js"></script>
+  </body>
+</html>
